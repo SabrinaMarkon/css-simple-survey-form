@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>FCC Survey Form</title>
+  </head>
+  <body>
+		<main class="container">
+				<h1 id="title">JavaScript Survey</h1>
+				<p id="description">
+					What do you think I should blog about next? :3
+				</p>
+				<form id="survey-form">
+					<label id="name-label" for="name">Name</label>
+					<input
+						id="name"
+						name="name"
+						type="text"
+						placeholder="Your name"
+						required
+					/>
+					<label id="email-label" for="email">Email</label>
+					<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="Your email address"
+						required
+					/>
+					<label
+						id="number-label" for="number">Years Coding</label>
+					<input 
+					id="number" 
+					name="number" 
+					type="number" 
+					placeholder="Years coding experience"
+					required
+					min="0" 
+					max="100" />
+					<label id="dropdown-label" for="dropdown">Your Favorite Framework</label>
+					<select id="dropdown">
+						<option value="vanilla">None - Vanilla JS</option>
+						<option value="react">React</option>
+						<option value="vue">Vue</option>
+						<option value="svelte">Svelte</option>
+						<option value="angular">Angular</option>
+						<option value="ember">Ember</option>
+						<option value="meteor">Meteor</option>
+						<option value="mithril">Mithril</option>
+						<option value="node">Node</option>
+						<option value="polymer">Polymer</option>
+						<option value="backbone">Backbone</option>
+						<option value="aurelia">Aurelia</option>
+					</select>
+					<fieldset>
+						<legend>You are primarily a:</legend>
+						<label for="employed">
+							<input name="whencode" id="employed" type="radio" value="employed" />
+							Employed as a developer
+						</label>
+						<label for="selfemployed">
+							<input name="whencode" id="selfemployed" type="radio" value="selfemployed" />
+							Self-employed
+						</label>
+						<label for="student">
+							<input name="whencode" id="student" type="radio" value="student" />
+							A student
+						</label>
+						<label for="hobby">
+							<input name="whencode" id="hobby" type="radio" value="hobby" />
+							A hobbiest
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>What would you most like to learn more about?</legend>
+						<label for="prototypes">
+							<input
+								name="goals"
+								id="prototypes"
+								type="checkbox"
+								value="prototypes"
+							/>
+							Prototypes
+						</label>
+						<label for="eventloop">
+							<input
+								name="goals"
+								id="eventloop"
+								type="checkbox"
+								value="eventloop"
+							/>
+							Event Loop
+						</label>
+						<label for="generators">
+							<input
+								name="goals"
+								id="generators"
+								type="checkbox"
+								value="generators"
+							/>
+							Generators
+						</label>
+						<label for="hoisting">
+							<input name="goals" id="hoisting" type="checkbox" value="hoisting" />
+							Hoisting
+						</label>
+						<label for="arrays">
+							<input name="goals" id="arrays" type="checkbox" value="arrays" />
+							Arrays
+						</label>
+						<label for="objects">
+							<input name="goals" id="objects" type="checkbox" value="objects" />
+							Objects
+						</label>
+						<label for="scope">
+							<input name="goals" id="scope" type="checkbox" value="scope" />
+							Scope
+						</label>
+						<label for="this">
+							<input name="goals" id="this" type="checkbox" value="this" />
+							this
+						</label>
+						<label for="classes">
+							<input name="goals" id="classes" type="checkbox" value="classes" />
+							Classes
+						</label>
+						<label for="modules">
+							<input name="goals" id="modules" type="checkbox" value="modules" />
+							Modules
+						</label>
+						<label for="promises">
+							<input name="goals" id="promises" type="checkbox" value="promises" />
+							Promises
+						</label>
+						<label for="closure">
+							<input name="goals" id="closure" type="checkbox" value="closure" />
+							Closure
+						</label>
+						<label for="fatarrow">
+							<input name="goals" id="fatarrow" type="checkbox" value="fatarrow" />
+							Fat Arrow
+						</label>
+						<label for="frameworks">
+							<input
+								name="frameworks"
+								id="frameworks"
+								type="checkbox"
+								value="frameworks"
+							/>
+							Frameworks
+						</label>
+						<label for="testing">
+							<input name="testing" id="testing" type="checkbox" value="testing" />
+							Testing
+						</label>
+					</fieldset>
+					<label id="comments-label" for="comments">Extra Comments</label>
+					<textarea id="comments"></textarea>
+					<button id="submit" type="submit">Submit</button>
+				</form>
+		</main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
